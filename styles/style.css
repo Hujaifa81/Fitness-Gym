@@ -13,7 +13,7 @@ body {
 }
 
 .section-body {
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0px auto;
     padding: 0.8rem 2rem;
     padding-bottom: 0px;
@@ -72,7 +72,7 @@ li button {
     align-items: center;
     margin-top: 2rem;
     height: calc(100vh - 100px);
-    
+
 }
 
 .banner-text {
@@ -154,9 +154,19 @@ div>button:nth-child(2) {
 }
 
 .badge h3,
-.badge2 h1,.text-habit h1,h4 {
+.badge2 h1,
+h4 {
     color: white;
 
+}
+
+.text-habit h1,
+.run-text h1,
+.bmi-container h4,
+.bmi h1,.team-section h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .badge p,
@@ -183,44 +193,232 @@ div>button:nth-child(2) {
     flex-direction: column;
 }
 
-.text-habit{
+.text-habit {
     margin-top: 2rem;
-    
+
     background-color: black;
     text-align: center;
 }
 
-.text-habit p{
+.text-habit p {
     color: rgba(239, 237, 232, 0.5);
     margin-top: 1rem;
 }
-.habit-image-container{
+
+.habit-image-container {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.habit-image-container img{
+
+.habit-image-container img {
     width: 50%;
     height: 50%;
     object-fit: cover;
-    
-    border-radius: 50%; 
-    
+
+    border-radius: 50%;
+
 }
-.image>div:nth-child(1){
+
+.image>div:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.image-text{
+
+.image-text {
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     margin-top: 1rem;
+
+}
+
+.image-text p {
+    margin-top: 0.5rem;
+}
+
+.run {
+    margin-top: 4rem;
+    display: flex;
+    gap: 4rem;
+    max-height: 360px;
+
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    background: rgb(34, 34, 34);
+    justify-content: space-around;
+}
+
+.run-text {
+    width: 65%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.run-image {
+    width: 35%;
+
+}
+
+.run-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.run button {
+    width: 220px;
+}
+
+.bmi {
+    max-width: 660px;
+    margin: 4rem auto;
+
+}
+
+.bmi-container {
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    gap:2rem;
+    padding:1rem
+}
+
+.bmi-chart {
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.bmi-input {
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     
 }
-.image-text p{
-    margin-top: 0.5rem;
+table{
+    width: 75%;
+}
+table,
+td,
+th {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+th {
+    color: white;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+}
+
+.input-container input,
+select {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+input,
+select {
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.694);
+    
+}
+select{
+    color: rgba(255, 255, 255, 0.694);
+}
+.last-input {
+    grid-column: 1/-1;
+   
+}
+.team-section{
+    margin-top: 4rem;
+}
+.team-section h1,.team-section p{
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+.team-container{
+    margin-top: 3rem;
+    
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 200px;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+   
+}
+.team-image{
+    position: relative;
+}
+.team-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: start;
+    position: absolute;
+    bottom: 8px;
+    left: 9px;
+}
+footer{
+    margin-top: 4rem;
+    background-color:  rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.inside-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.footer-subtitle{
+    font-size: 12px;
+}
+.copyright{
+    margin: 1rem 0rem;
+    text-align: center;
 }
