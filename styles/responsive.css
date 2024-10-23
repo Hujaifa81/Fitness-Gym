@@ -1,0 +1,148 @@
+@media screen and (max-width:480px) {
+
+    .responive-padding {
+        padding: 0.5rem;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .banner {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 2rem;
+        height: calc(100vh - 100px);
+
+
+    }
+
+    .banner-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .banner-image {
+        margin-top: 1rem;
+        width: 100%;
+
+    }
+
+    header img {
+        width: 100%;
+
+    }
+
+    .badge2 {
+        width: 10.5rem;
+
+    }
+
+    .badge p,
+    .badge2 p {
+        color: rgba(239, 237, 232, 0.65);
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .btn-container {
+        justify-content: space-between;
+
+    }
+
+    .text-habit {
+        margin-top: 25rem;
+
+    }
+
+    .habit-image-container {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .image-text p {
+        width: 50%;
+        margin: 12px auto;
+    }
+
+    .run {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .run-text {
+        width: 100%;
+
+    }
+
+    .run-image {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .run-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .run button {
+        width: 100%;
+    }
+    .Training-and-exercise{
+        margin-top: -22rem;
+        
+        }
+    .bmi {
+        margin: 2rem auto;
+        
+
+    }
+
+    .bmi-container {
+
+        flex-direction: column;
+    }
+
+    .bmi-chart {
+
+        width: 100%;
+
+
+    }
+
+    .bmi-input {
+        width: 100%;
+    }
+    .team-section{
+        margin-top: 2rem;
+        
+    }
+    .team-container{
+        
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .join-today{
+        margin-top: 2rem;
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .footer-container{
+       flex-direction: column;
+       gap: 1.5rem;
+       align-items: start;
+    }
+}
